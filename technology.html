@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology | ClosedClaw</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">CLOSED<span class="highlight">CLAW</span></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="vision.html">Manifesto</a>
+                <a href="technology.html" class="active">Technology</a>
+                <a href="kognist.html">Kognist</a>
+                <a href="#contact" class="btn-primary">Get Access</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 50vh; padding-bottom: 2rem;">
+            <div class="hero-content centered">
+                <div class="badge-blue">THE SOVEREIGN STACK</div>
+                <h1>The <span class="text-gradient">Locked Room</span>.</h1>
+                <p class="sub-text" style="max-width: 600px; margin-left: auto; margin-right: auto;">
+                    How we give AI unrestricted <code>root</code> access without modifying your production environment until you say so.
+                </p>
+            </div>
+        </section>
+
+        <section class="workflow-section" style="background: transparent; padding-top: 0;">
+            <div class="workflow-content">
+                <div class="text-side">
+                    <h2>Phase B: Sovereign Code Execution</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        We use an ephemeral <strong>Copy-Mount Architecture</strong> to isolate AI work.
+                        When an agent needs to code, we clone your repo into a temporary, network-isolated vessel.
+                    </p>
+                    <ul class="feature-list">
+                        <li><span class="bullet"></span> Secrets (`.env`) are stripped</li>
+                        <li><span class="bullet"></span> Full Bash/Git access enabled</li>
+                        <li><span class="bullet"></span> Risk Score calculated on diff</li>
+                    </ul>
+                </div>
+                <div class="visual-side">
+                    <img src="assets/network_silence.png" alt="Sovereign Code Diagram" style="border: 1px solid var(--border-glass);">
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison-section">
+            <div class="section-header">
+                <h2>Metro Coding</h2>
+                <p class="sub-text" style="margin-left: auto; margin-right: auto;">
+                    The "Telegram Interface" allows you to approve merges from the subway using a hardened verification UI.
+                </p>
+            </div>
+
+            <div class="glass-panel">
+                <div class="table-header">
+                    <div class="col-risk">ACTIVITY</div>
+                    <div class="col-safe">STATUS</div>
+                </div>
+                <div class="table-row">
+                    <div class="col-risk">Sandbox Creation</div>
+                    <div class="col-safe"><span style="color: var(--accent-blue);">Ephemeral (300ms)</span></div>
+                </div>
+                <div class="table-row">
+                    <div class="col-risk">Diff Analysis</div>
+                    <div class="col-safe"><span style="color: var(--accent-blue);">Heuristic Scan</span></div>
+                </div>
+                <div class="table-row">
+                    <div class="col-risk">Mobile Merge</div>
+                    <div class="col-safe"><span style="color: var(--accent-blue);">Cryptographic Sign-off</span></div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="hero" style="min-height: 40vh;">
+            <div class="hero-content centered">
+               <h2>Shared Persistence</h2> 
+               <p class="sub-text" style="margin-left: auto; margin-right: auto;">
+                   We treat GitHub as the <strong>Universal Sink</strong>. Intelligence is not stored in the agent's memory; it is committed to the repo. Destroy the agent, and the intelligence remains.
+               </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pitch-footer" style="padding-top: 4rem; background: transparent;">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="vision.html">Manifesto</a>
+            <a href="technology.html">Technology</a>
+            <a href="kognist.html">Kognist</a>
+        </div>
+        <div style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-secondary); opacity: 0.5;">
+            &copy; 2026 CLOSEDCLAW. EST. 2026.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

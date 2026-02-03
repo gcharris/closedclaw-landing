@@ -79,6 +79,11 @@ body {
     color: var(--text-primary);
 }
 
+.nav-links a.active {
+    color: var(--text-primary);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
 .nav-links .btn-primary {
     margin-left: 2rem;
     color: var(--bg-dark);
@@ -175,12 +180,14 @@ h1 {
 
 .text-gradient-danger {
     background: linear-gradient(135deg, #ff4d00, #ff8800);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .text-gradient {
     background: linear-gradient(135deg, #ffffff, #a0a0b0);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
