@@ -304,6 +304,10 @@ h1 {
     gap: 4rem;
 }
 
+.workflow-section.reverse .workflow-content {
+    flex-direction: row-reverse;
+}
+
 .workflow-content .text-side {
     flex: 1;
     order: 2; /* Image left, text right? No, standard is safer usually, let's stick to user prompt layout implication or standard zig-zag */

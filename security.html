@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovereign Security Model | ClosedClaw</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">CLOSED<span class="highlight">CLAW</span></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="security.html" class="active">Security</a>
+                <a href="vision.html">Manifesto</a>
+                <a href="technology.html">Technology</a>
+                <a href="kognist.html">Kognist</a>
+                <a href="#contact" class="btn-primary">Get Access</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero" style="min-height: 60vh; padding-bottom: 2rem;">
+            <div class="hero-content centered">
+                <div class="badge-blue">THE SOVEREIGN SECURITY MODEL</div>
+                <h1>Physics Over <span class="text-gradient">Promises</span>.</h1>
+                <p class="sub-text" style="margin-left: auto; margin-right: auto; max-width: 800px;">
+                    ClosedClaw doesn't just "ask nicely" for the AI to be safe. We enforce safety through hardware-level isolation and <strong>Google Vertex AI</strong> enterprise-grade perimeters.
+                </p>
+                <div style="margin-top: 2rem; color: var(--text-secondary); font-family: var(--font-mono); font-size: 0.9rem;">
+                    [ ARCHITECTURAL STANDARD #89 ]
+                </div>
+            </div>
+        </section>
+
+        <!-- 1. The Copy-Mount Lifecycle -->
+        <section class="workflow-section">
+            <div class="workflow-content">
+                <div class="text-side">
+                    <h2>1. The Copy-Mount Lifecycle</h2>
+                    <p class="section-subtitle" style="color: var(--accent-blue);">The Core "Prophylactic"</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        <strong>The Problem:</strong> Bind-mounts allow an AI to "see" and "edit" your host system in real-time. One malicious command can wipe your drive or leak your `.ssh` keys.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        <strong>The Solution:</strong> We utilize an ephemeral <strong>Copy-Mount Sandbox</strong>. The Architect clones your repository into a temporary Docker volume. The AI works on the <em>copy</em>, not the <em>source</em>. If the agent attempts a "destructive" command, it only destroys a disposable mirror. Also, secrets (`.env`) are stripped before cloning.
+                    </p>
+                </div>
+                <div class="visual-side">
+                    <img src="assets/copy_mount_mirror.png" alt="Copy-Mount Sandbox Diagram" class="float-animation" style="border: 1px solid var(--border-glass);">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. The Google Vertex AI Bridge -->
+        <section class="security-section">
+             <div class="specs-grid">
+                 <div class="spec-card glass-panel" style="grid-column: span 3;">
+                     <div class="spec-icon">☁️</div>
+                     <h3>2. The Google Vertex AI Bridge</h3>
+                     <p style="max-width: 800px; margin: 0 auto 2rem;">
+                         We leverage <strong>Google Cloud Vertex AI</strong> to handle model orchestration.
+                     </p>
+                     <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; text-align: left;">
+                         <div style="flex: 1; min-width: 250px;">
+                             <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">IAM Integration</h4>
+                             <p style="font-size: 0.9rem;">Your credentials stay in a hardened, encrypted vault. Never exposed to the agent.</p>
+                         </div>
+                         <div style="flex: 1; min-width: 250px;">
+                             <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">VPC Controls</h4>
+                             <p style="font-size: 0.9rem;">The sandbox operates within a private VPC service perimeter, preventing "phone home" data exfiltration.</p>
+                         </div>
+                         <div style="flex: 1; min-width: 250px;">
+                             <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Audit-Ready</h4>
+                             <p style="font-size: 0.9rem;">Every inference and tool-call is logged via Google Cloud Logging for total compliance transparency.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- 3. Network Silence -->
+        <section class="workflow-section reverse">
+            <div class="workflow-content">
+                <div class="visual-side">
+                    <img src="assets/network_kill_switch.png" alt="Network Kill-Switch UI" style="border: 1px solid var(--border-glass);">
+                </div>
+                <div class="text-side">
+                    <h2>3. Network Silence</h2>
+                    <p class="section-subtitle" style="color: var(--accent-orange);">Zero-Exfiltration</p>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                        <strong>No Backdoors. No Leaks.</strong><br>
+                        During the "Drafting" phase, the sandbox operates with <code>--network none</code>. The AI can write code and run local tests, but it is physically incapable of sending your data to an external server. Network access is only granted if you explicitly approve an <code>npm install</code> or <code>curl</code> during the Tier 3 Handshake.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. The Safety Post-Mortem -->
+        <section class="comparison-section">
+            <div class="section-header">
+                <h2>4. The Safety Post-Mortem</h2>
+                <p class="sub-text" style="margin-left: auto; margin-right: auto;">
+                    Every mission ends with a <strong>Sovereign Outbox</strong> report delivered to your device.
+                </p>
+            </div>
+
+            <div class="glass-panel" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <div class="table-row">
+                    <div class="col-risk" style="flex: 1;">Bash Trace</div>
+                    <div class="col-safe" style="flex: 2; color: var(--text-secondary);">Line-by-line audit of every shell command executed.</div>
+                </div>
+                <div class="table-row">
+                    <div class="col-risk" style="flex: 1;">Diff Analysis</div>
+                    <div class="col-safe" style="flex: 2; color: var(--text-secondary);">Precise view of every file changed.</div>
+                </div>
+                 <div class="table-row">
+                    <div class="col-risk" style="flex: 1;">Test Proof</div>
+                    <div class="col-safe" style="flex: 2; color: var(--text-secondary);">Verification that your code still passes its own tests.</div>
+                </div>
+                <div style="margin-top: 2rem; text-align: center; border-top: 1px solid var(--border-glass); padding-top: 2rem;">
+                    <p style="font-size: 1.1rem; color: var(--accent-success);">
+                        One tap to <code>Merge to Main</code> or <code>Create PR</code>. The code only leaves the sandbox when the Director gives the blessing.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pitch-footer" style="padding-top: 4rem; background: transparent;">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="security.html">Security</a>
+            <a href="vision.html">Manifesto</a>
+            <a href="technology.html">Technology</a>
+            <a href="kognist.html">Kognist</a>
+        </div>
+        <div style="margin-top: 2rem; font-size: 0.8rem; color: var(--text-secondary); opacity: 0.5;">
+            &copy; 2026 CLOSEDCLAW. EST. 2026.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
